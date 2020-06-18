@@ -1,0 +1,8 @@
+{%extends "index.html" %}
+{% block content %}
+    <form action="/retrieve" method="POST">
+        <input type='text' name="char_name" placeholder="name a character">
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}

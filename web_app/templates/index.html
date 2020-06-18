@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+</head>
+<body>
+    <ul id="navigation">
+    {% for item in navigation %}
+        <li><a href="{{ item.href }}">{{ item.caption }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h1>API Testing</h1>
+
+    <p>This is the placeholder</p>
+    <!-- {{ a_variable }}
+    {% macro input(name, value='', type='text', size=20) -%}
+    <input type="{{ type }}" name="{{ name }}" value="{{
+        value|e }}" size="{{ size }}">
+    {%- endmacro %}
+    <p>search name {{ input('username') }}</p>
+
+
+    {# a comment #} -->
+</body>
+</html>
